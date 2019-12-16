@@ -1,0 +1,39 @@
+  #mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+    display: none !important;
+  }
+  input.mce_inline_error { border: solid red 1px; }
+  .error {
+    border: solid red 1px;
+  }
+  .success-message {
+    color: var(--theme_dark-grey);
+    background-color: var(--theme_colour);
+    margin-bottom: 2em;
+    padding: .5em;
+    /* width: 96%; */
+  }
+  .mc-status.success-message {
+    font-size: 20px;
+    line-height: 1.5em;
+  }
+  .error-message {
+    color: var(--theme_colour);
+    background-color: var(--theme_dark-grey);
+    margin-bottom: .5em;
+    margin-top: .25em;
+    padding: .5em;
+    /* width: 96%; */
+  }
+  .mc-status.error-message {
+    font-size: 20px;
+    line-height: 1.5em;
+  }
+  .mc-status:focus {
+    outline: none;
+  }
+  /* .grecaptcha-badge {display: none !important;} */
+
+
+/***************************/
+
+label { display: none;}
