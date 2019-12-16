@@ -5,12 +5,11 @@
   --theme_grey: #333333;
   /*  */
   --theme_green: rgba(67, 204, 26, 1);
+  --theme_green-dark:rgba(55, 167, 22, 1);
   --theme_not-white: rgba(252, 252, 252, 1);
   --theme_purple: rgba(216, 0, 255, 1);
   --theme_mid-grey: rgba(125, 125, 125, 1);
   --theme_dark-grey: rgba(46, 46, 46, 1);
-  /*  */
-  --theme_green-dark:#37A716;
 }
 
 
@@ -19,12 +18,12 @@
 }
 
 a.link_green {
-  color:var(--theme_colour);
+  color:var(--theme_green-dark);
   font-weight: bold;
 }
 
 a.link_green:hover {
-  color:var(--theme_green-dark);
+  color:var(--theme_colour);
 }
 
 .bg-theme { background-color: var(--theme_colour);}
@@ -43,7 +42,7 @@ a.link_green:hover {
 }
 
 .green_link:hover, .green_link:focus {
-    color:var(--theme_colour-dark);
+    color:var(--theme_colour-dark) !important;
     -webkit-transition: color 2s ease-out;
     -moz-transition: color 2s ease-out;
     -o-transition: color 2s ease-out;
@@ -51,7 +50,7 @@ a.link_green:hover {
 }
 
 .green_link:active {
-    opacity: .8;
+    opacity: .8  !important;
     color:var(--theme_colour-dark);
     -webkit-transition: color 2s ease-out, opacity .15s ease-out;
     -moz-transition: color 2s ease-out, opacity .15s ease-out;
@@ -67,8 +66,9 @@ a.link_green:hover {
     transition: background-color .15s ease-in;
 }
 
-.green_link-bg:hover, .green_link:focus {
-    background-color:var(--theme_colour-dark);
+.green_link-bg:hover, .green_link-bg:focus {
+    background-color:var(--theme_green-dark);
+    /* color:var(--theme_purple); */
     -webkit-transition: background-color 2s ease-out;
     -moz-transition: background-color 2s ease-out;
     -o-transition: background-color 2s ease-out;
@@ -77,7 +77,7 @@ a.link_green:hover {
 
 .green_link-bg:active {
     opacity: .8;
-    background-color:var(--theme_colour-dark);
+    background-color:var(--theme_green-dark);
     -webkit-transition: background-color 2s ease-out, opacity .15s ease-out;
     -moz-transition: background-color 2s ease-out, opacity .15s ease-out;
     -o-transition: background-color 2s ease-out, opacity .15s ease-out;
@@ -85,5 +85,5 @@ a.link_green:hover {
 }
 
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
