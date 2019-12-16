@@ -1,4 +1,8 @@
 // A Validity State Polyfill
+// based on
+// https://css-tricks.com/form-validation-part-4-validating-mailchimp-subscribe-form/
+// https://codepen.io/cferdinandi/pen/ZyLzQV
+//
 ;(function (window, document, undefined) {
 
 	'use strict';
