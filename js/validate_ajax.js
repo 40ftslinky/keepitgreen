@@ -530,7 +530,7 @@ window.displayMailChimpStatus = function (data) {
 	if (data.result === 'error') {
 		mcStatus.classList.remove('success-message');
 		mcStatus.classList.add('error-message');
-		mcStatus.innerHTML = 'Oops! There seem to be a few problems. Please check your details and try resubmitting.'
+		// mcStatus.innerHTML = 'Oops! There seem to be a few problems. Please check your details and try resubmitting.'
 		return;
 	}
 
@@ -545,10 +545,12 @@ window.displayMailChimpStatus = function (data) {
 	// 	}, 2000);
   // }
 	if(data.result != 'error') {
-		// window.document.getElementsByClassName( 'mc-field-group' )
-		[].forEach.call(document.querySelectorAll('mc-field-group'), function (el) {
-		  el.style.visibility = 'hidden';
-		});
+		var divs = document.querySelectorAll("[class*='mc-field'], input[type='submit']"), i;
+
+		for (i = 0; i < divs.length; ++i) {
+		    divs[i].style.visibility = 'hidden';
+		}
+		
 		mcStatus.innerHTML = 'Success! Thank you for submitting your details. We will contact you shortly.';
  		return;
  	}
