@@ -1,0 +1,85 @@
+/* custom.css */
+
+:root {
+  --theme_colour: #43cc1a;
+  --theme_grey: #333333;
+  /*  */
+  --theme_green: rgba(67, 204, 26, 1);
+  --theme_not-white: rgba(252, 252, 252, 1);
+  --theme_purple: rgba(216, 0, 255, 1);
+  --theme_mid-grey: rgba(125, 125, 125, 1);
+  --theme_dark-grey: rgba(46, 46, 46, 1);
+  /*  */
+  --theme_green-dark:#37A716;
+}
+
+
+.dark-grey {
+  color:var(--theme_dark-grey);
+}
+
+a.link_green {
+  color:var(--theme_colour);
+  font-weight: bold;
+}
+
+a.link_green:hover {
+  color:var(--theme_green-dark);
+}
+
+.bg-theme { background-color: var(--theme_colour);}
+.b--theme { border-color:var(--theme_colour); }
+
+.bg-purple { background-color: var(--theme_purple);}
+.b--purple { border-color:var(--theme_purple); }
+
+
+.green_link {
+    color:var(--theme_colour);
+    -webkit-transition: color 2s ease-out;
+    -moz-transition: color 2s ease-out;
+    -o-transition: color 2s ease-out;
+    transition: color .15s ease-in;
+}
+
+.green_link:hover, .green_link:focus {
+    color:var(--theme_colour-dark);
+    -webkit-transition: color 2s ease-out;
+    -moz-transition: color 2s ease-out;
+    -o-transition: color 2s ease-out;
+    transition: color .15s ease-in;
+}
+
+.green_link:active {
+    opacity: .8;
+    color:var(--theme_colour-dark);
+    -webkit-transition: color 2s ease-out, opacity .15s ease-out;
+    -moz-transition: color 2s ease-out, opacity .15s ease-out;
+    -o-transition: color 2s ease-out, opacity .15s ease-out;
+    transition: color 2s ease-out, opacity .15s ease-out;
+}
+
+.green_link-bg {
+    background-color:var(--theme_colour);
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color .15s ease-in;
+}
+
+.green_link-bg:hover, .green_link:focus {
+    background-color:var(--theme_colour-dark);
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color .15s ease-in;
+}
+
+.green_link-bg:active {
+    opacity: .8;
+    background-color:var(--theme_colour-dark);
+    -webkit-transition: background-color 2s ease-out, opacity .15s ease-out;
+    -moz-transition: background-color 2s ease-out, opacity .15s ease-out;
+    -o-transition: background-color 2s ease-out, opacity .15s ease-out;
+    transition: background-color 2s ease-out, opacity .15s ease-out;
+}

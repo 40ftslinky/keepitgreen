@@ -1,0 +1,36 @@
+/* typography.css */
+@import url("https://use.typekit.net/xgh5tnb.css");
+
+*, .proxima-nova {
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+}
+
+.proxima-nova-thin {
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+
+.proxima-nova-light {
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.proxima-nova-regular {
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.proxima-nova-bold {
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+#about p {
+  font-size: 1.3rem;
+  color:var(--theme_dark-grey);
+}
