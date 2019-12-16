@@ -83,3 +83,7 @@ a.link_green:hover {
     -o-transition: background-color 2s ease-out, opacity .15s ease-out;
     transition: background-color 2s ease-out, opacity .15s ease-out;
 }
+
+html {
+  scroll-behavior: smooth;
+}
