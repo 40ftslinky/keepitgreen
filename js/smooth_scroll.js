@@ -1,4 +1,4 @@
-jQuery(document).ready(function($){
+$(document).ready(function(){
   //Smooth scroll
   // Select all links with hashes
   $('a[href*="#"]').on('click', function(event) {
