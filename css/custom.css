@@ -85,5 +85,5 @@ a.link_green:hover {
 }
 
 html {
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
