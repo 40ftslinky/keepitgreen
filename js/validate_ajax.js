@@ -549,6 +549,7 @@ window.displayMailChimpStatus = function (data) {
 
 		for (i = 0; i < divs.length; ++i) {
 		    divs[i].style.visibility = 'hidden';
+		    divs[i].style.display = 'none';
 		}
 		
 		mcStatus.innerHTML = 'Success! Thank you for submitting your details. We will contact you shortly.';
